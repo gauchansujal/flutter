@@ -1,12 +1,12 @@
 import 'package:batch_35_classwork/screens/armstring_screen.dart';
 import 'package:batch_35_classwork/screens/arthmetic_screen.dart';
-
+import 'package:batch_35_classwork/screens/column_screen.dart';
+import 'package:batch_35_classwork/screens/row_screen.dart';
+import 'package:batch_35_classwork/screens/arthamatic2_screen.dart'; // <-- ADD THIS
 import 'package:flutter/material.dart';
 import 'screens/dashboard_screen.dart';
-
 import 'screens/simple_interest_screen.dart';
 import 'screens/area_circle_screen.dart';
-
 import 'screens/palindrome_screen.dart';
 
 void main() {
@@ -21,6 +21,10 @@ class MyApp extends StatelessWidget {
       title: 'Batch 35 Classwork',
       home: DashboardScreen(),
       routes: {
+        '/arthmatic2': (context) => const Arthamatic2Screen(),
+
+        '/row': (context) => RowScreen(),
+        '/column': (context) => ColumnScreen(),
         '/arithmetic': (context) => ArithmeticScreen(),
         '/simpleInterest': (context) => SimpleInterestScreen(),
         '/areaCircle': (context) => AreaCircleScreen(),
@@ -30,6 +34,4 @@ class MyApp extends StatelessWidget {
       },
     );
   }
-
-  fluttterLayout() {}
 }

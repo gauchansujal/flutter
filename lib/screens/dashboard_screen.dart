@@ -46,6 +46,23 @@ class DashboardScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, '/flutter'),
               child: Text('flutter layout'),
             ),
+
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/row'),
+              child: Text('Row reen'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/column'),
+              child: Text('Column screen'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/columnview'),
+              child: Text('Columnview screen'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/arthmatic2'),
+              child: const Text('Arithmetic 2 Screen'),
+            ),
           ],
         ),
       ),
