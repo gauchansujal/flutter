@@ -7,7 +7,7 @@ import 'package:batch_35_classwork/screens/row_screen.dart';
 import 'package:batch_35_classwork/screens/arthamatic2_screen.dart'; // <-- ADD THIS
 import 'package:batch_35_classwork/widget/my_widget.dart';
 import 'package:flutter/material.dart';
-import 'screens/dashboard_screen.dart';
+import 'screens/dashboard_screen.dart' hide FluttterLayout;
 import 'screens/simple_interest_screen.dart';
 import 'screens/area_circle_screen.dart';
 import 'screens/palindrome_screen.dart';
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         '/flutter': (context) => FluttterLayout(),
         '/fexiable': (context) => FexiableExpandedScreen(),
         '/imageview': (context) => ImageViewScreen(),
-        '/mywidget': (context) => MyWidgetScreen(),
+        '/mywidget': (_) => const FluttterLayout(),
       },
     );
   }
