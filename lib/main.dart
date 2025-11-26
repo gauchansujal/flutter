@@ -1,8 +1,11 @@
 import 'package:batch_35_classwork/screens/armstring_screen.dart';
 import 'package:batch_35_classwork/screens/arthmetic_screen.dart';
 import 'package:batch_35_classwork/screens/column_screen.dart';
+import 'package:batch_35_classwork/screens/fexiable_expanded_screen.dart';
+import 'package:batch_35_classwork/screens/image_view_screen.dart';
 import 'package:batch_35_classwork/screens/row_screen.dart';
 import 'package:batch_35_classwork/screens/arthamatic2_screen.dart'; // <-- ADD THIS
+import 'package:batch_35_classwork/widget/my_widget.dart';
 import 'package:flutter/material.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/simple_interest_screen.dart';
@@ -31,6 +34,9 @@ class MyApp extends StatelessWidget {
         '/armstrong': (context) => ArmstrongScreen(),
         '/palindrome': (context) => PalindromeScreen(),
         '/flutter': (context) => FluttterLayout(),
+        '/fexiable': (context) => FexiableExpandedScreen(),
+        '/imageview': (context) => ImageViewScreen(),
+        '/mywidget': (context) => MyWidgetScreen(),
       },
     );
   }

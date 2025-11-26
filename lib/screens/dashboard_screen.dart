@@ -63,6 +63,18 @@ class DashboardScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, '/arthmatic2'),
               child: const Text('Arithmetic 2 Screen'),
             ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/fexiable'),
+              child: const Text('fexiable Screen'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/imageview'),
+              child: const Text('image Screen'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/mywidget'),
+              child: const Text('Mywidget Screen'),
+            ),
           ],
         ),
       ),
